@@ -12,14 +12,24 @@ describe("Testing page behaviour",() => {
         cy.visit("https://osdatahub.os.uk");
         hp.acceptCookiesDisplayed();
         hp.mainPageDisplayed();
-        hp.homeGridElementsClick(1); // 
-        if(!hp.apiDashBoardPage()){
+        hp.menuClick();
+        hp.apiDashBoardPage();
+        if(!hp.apiDashBoardListVisible()){
             console.log("Failed to open APIDashboard Page");
         }else{
             console.log("succesfully opened APIDashboard Page");
         }
 
+        hp.clickOnBackMenuBtn();
 
+        //Docs 
+        hp.clickOndocsLink();
+        if(!hp.docsListDisplayed()){
+            console.log("Failed to open Docs Page");
+        }else{
+            console.log("succesfully opened Docs Page");
+        }
+        hp.clickOnBackMenuBtn(); 
 
     })
 })

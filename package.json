@@ -1,0 +1,22 @@
+{
+  "name": "package",
+  "version": "1.0.0",
+  "description": "TestProject",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/poojaswami27/Cypress.git"
+  },
+  "bugs": {
+    "url": "https://github.com/poojaswami27/Cypress/issues"
+  },
+  "homepage": "https://github.com/poojaswami27/Cypress#readme",
+  "devDependencies": {
+    "cypress": "^12.5.1"
+  }
+}
